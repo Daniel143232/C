@@ -1,0 +1,214 @@
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+ float X;
+ printf("print a number \n");
+ scanf("%f",&X);                                                          //תרגיל 1
+ 
+ if(X>=0)
+  {
+     printf("the number is positive %f \n" ,X );
+  }
+  else
+         {
+         printf("the number is negetive %f \n",X );    
+         }
+
+}
+
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+ int x;
+ printf("print a number \n");
+ scanf("%d",&x);
+
+ if(x%2==0)
+    {
+    printf("the num is being definied by two %d \n",x);                                    //תרגיל 2
+    }
+ else
+    {
+    printf("the number is not being defined by two %d \n" ,x);
+    
+    }
+    
+}
+
+
+#include <stdio.h>
+#include <math.h>                                                                    //תרגיל 3
+int main()
+{
+ int x,y;
+ printf("print the first number \n");
+ scanf("%d",&x);
+ printf("print the second number \n");
+ scanf("%d",&y);
+ 
+ if((x*y)%5==0)    
+{
+ printf("the answer of %d*%d= %d",x,y ,x*y);   
+}   
+ else
+ {
+ printf("error");   
+ }
+ 
+}
+
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+ int x,y,z;
+ printf("print the first number \n");                                   //תרגיל 4
+ scanf("%d",&x);
+ printf("print the second number \n");
+ scanf("%d",&y);
+ printf("print the third number \n");
+ scanf("%d",&z); 
+     
+ if((x>0&&x%2==0)&&(y>0&&y%2==0)&&(z>0&&z%2==0))   
+    {
+    printf("True");
+    }
+  else 
+    {
+    printf("False");
+    }
+}
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+int x,y,z;
+ printf("print the first number \n");
+ scanf("%d",&x);
+ printf("print the second number \n");
+ scanf("%d",&y);
+ printf("print the second number \n");
+ scanf("%d",&z);
+ if(x>y&&x<z)
+ {
+  printf("the numbers are organized %d=y %d=x %d=z" ,y,x,z);
+ }
+ else
+   if(y>z&&y<x)
+    {
+    printf("the numbers are organized %d=z %d=y %d=x" ,z,y,x);
+    }
+ else
+   if(z<x&&z>y)
+    {
+    printf("the numbers are organized %d=y %d=z %d=x" ,y,z,x);
+    }   
+   else
+    if(z>y&&y>x)
+    {
+    printf("the numbers are organized %d=x %d=y %d=z" ,x,y,z);
+        
+    }
+   else
+     if(y>x&&x>z)
+    {
+    printf("the numbers are organized %d=z %d=x %d=y" ,z,x,y);
+    }
+    else
+      if(y>z&&z>x)
+    {
+    printf("the numbers are organized %d=x %d=z %d=y" ,x,z,y);
+    }
+    
+    
+}
+ 
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+ float iceCream = 1.20;
+ int amount;
+ float sum;
+ int TenIce = 10;
+ int cardbored=54;
+ int hilok;
+ int sheherit;
+ printf("the amount of Ice Creams the customer took is \n");
+ scanf("%d",&amount);
+ if(amount < 10)
+ {
+ sum = iceCream * amount;
+ }
+ else
+   if(amount ==10)
+   {
+   sum =10;
+   }
+   else
+     if(amount > 10 && amount <54)
+     {
+   sheherit = amount % 10;
+   hilok = (amount /10);
+   hilok = hilok *10;
+   sum = hilok + sheherit *1.2;
+         
+     }
+     else
+     if(amount==54)
+     {
+     sum = 50;                                                      //שאלה 6
+     }
+     else
+       if(amount > 54 && amount <108)
+     {
+     sheherit = amount % 10;
+      hilok = (amount /10);
+      hilok = hilok *10;
+      sum = hilok + sheherit *1.2;
+     }
+else
+       if(amount ==108)
+{
+     sum = 50*2;
+}
+     else
+     {
+       if(amount >108)
+   printf("error");
+}   
+     printf("the cash you will pay is %f" ,sum);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
